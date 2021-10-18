@@ -13,9 +13,11 @@ import useCart from "../hooks/useCart";
 
 // to run full netlify locally: netlify dev  
 // to run locally: npm run dev
-// Must add STRIPE ENVIRONMENT_KEYS: (NEXT_PUBLIC_* makes env var usable on netlify platform )
-//  NEXT_PUBLIC_STRIPE_PUBLIC_KEY
-//  STRIPE_SECRET_KEY
+
+// Must add .env file for STRIPE ENVIRONMENT_KEYS: (NEXT_PUBLIC_* makes env var usable on netlify platform )
+//  NEXT_PUBLIC_STRIPE_PUBLIC_KEY=pk_test_XXXXXXXYYYYYY
+//  STRIPE_SECRET_KEY=sk_test_XXXXXXXYYYYYY
+// and add these to netlify Environment vars
 
 
 const Container = styled.div`
