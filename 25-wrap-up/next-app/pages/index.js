@@ -5,6 +5,19 @@ import styled from "styled-components";
 import UnstyledLink from "../components/styled/UnstyledLink";
 import useCart from "../hooks/useCart";
 
+
+// from:🎄Day 1 - Introduction to Build an E-Commerce Platform in 25 Days with Next.js, Netlify and Stripe
+//   https://www.youtube.com/watch?v=LbrcQ0J2TVE
+// https://github.com/realityexpander/e-commerce-in-25-days/tree/master/19-style-and-animate-cart/next-app
+// Netlify: https://app.netlify.com/sites/realityexpander-store/
+
+// to run full netlify locally: netlify dev  
+// to run locally: npm run dev
+// Must add STRIPE ENVIRONMENT_KEYS: (NEXT_PUBLIC_* makes env var usable on netlify platform )
+//  NEXT_PUBLIC_STRIPE_PUBLIC_KEY
+//  STRIPE_SECRET_KEY
+
+
 const Container = styled.div`
   background: white;
   padding: 1rem 2rem;
