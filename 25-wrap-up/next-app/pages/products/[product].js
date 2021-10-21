@@ -14,6 +14,29 @@ const SubTitle = styled.p`
   color: #666;
 `;
 
+const Circle = styled.div`
+  width: 30px;
+  height: 30px;
+  border: 10px;
+  border-style: solid dotted dotted solid;
+  border-radius: 50%;
+  border-color: red;
+  animation: anim 2s ease-in-out infinite;
+
+  @keyframes anim {
+    0% {
+      transform: rotate(250deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(250deg);
+    }
+  }
+`;
+
+
 const Price = styled.span`
   font-size: 2rem;
   background: #05d7df;
@@ -26,9 +49,10 @@ const Price = styled.span`
 `;
 
 const Product = ({ product: { data, content } }) => {
-  const html = marked(content);
+  const html = marked(content); // Convert markdown to html
   return (
     <Page>
+      <Circle />
       <Title>
         <h1>{data.name}</h1>
         <SubTitle>{data.description}</SubTitle>
@@ -62,7 +86,7 @@ export const getStaticProps = async (context) => {
   const productName = context.params.product;
   const filepath = `${process.cwd()}/content/${productName}.md`;
   const fileContent = fs.readFileSync(filepath).toString();
-  const { data, content } = matter(fileContent);
+  const { data, content } = matter(fileContent); // get vars and content from markdown file
 
   return {
     props: {

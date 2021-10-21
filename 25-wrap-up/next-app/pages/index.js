@@ -9,7 +9,8 @@ import useCart from "../hooks/useCart";
 // from:🎄Day 1 - Introduction to Build an E-Commerce Platform in 25 Days with Next.js, Netlify and Stripe
 //   https://www.youtube.com/watch?v=LbrcQ0J2TVE
 // https://github.com/realityexpander/e-commerce-in-25-days/tree/master/19-style-and-animate-cart/next-app
-// Netlify: https://app.netlify.com/sites/realityexpander-store/
+// Deployed here:
+//   Netlify: https://app.netlify.com/sites/realityexpander-store/
 
 // to run full netlify locally: netlify dev  
 // to run locally: npm run dev
@@ -17,7 +18,7 @@ import useCart from "../hooks/useCart";
 // Must add .env file for STRIPE ENVIRONMENT_KEYS: (NEXT_PUBLIC_* makes env var usable on netlify platform )
 //  NEXT_PUBLIC_STRIPE_PUBLIC_KEY=pk_test_XXXXXXXYYYYYY
 //  STRIPE_SECRET_KEY=sk_test_XXXXXXXYYYYYY
-// and add these to netlify Environment vars
+// and add these to netlify Environment vars (pk_live_*, sk_live_*)
 
 
 const Container = styled.div`
