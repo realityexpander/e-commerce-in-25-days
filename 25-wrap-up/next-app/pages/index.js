@@ -10,7 +10,8 @@ import useCart from "../hooks/useCart";
 //   https://www.youtube.com/watch?v=LbrcQ0J2TVE
 // https://github.com/realityexpander/e-commerce-in-25-days/tree/master/19-style-and-animate-cart/next-app
 // Deployed here:
-//   Netlify: https://app.netlify.com/sites/realityexpander-store/
+//   https://realityexpander-store.netlify.app/     
+// Netlify Dashboard: https://app.netlify.com/sites/realityexpander-store/
 
 // to run full netlify locally: netlify dev  
 // to run locally: npm run dev
@@ -20,6 +21,10 @@ import useCart from "../hooks/useCart";
 //  STRIPE_SECRET_KEY=sk_test_XXXXXXXYYYYYY
 // and add these to netlify Environment vars (pk_live_*, sk_live_*)
 
+// More docs:
+// ISG
+// https://www.smashingmagazine.com/2021/04/incremental-static-regeneration-nextjs/
+// https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration
 
 const Container = styled.div`
   background: white;
